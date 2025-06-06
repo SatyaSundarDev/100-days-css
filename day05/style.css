@@ -1,0 +1,373 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+* {
+    font-size: 12px;
+    font-weight: 300;
+    color: white;
+}
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 5px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #42A7A1;
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.header {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #F1BA64;
+    position: absolute;
+    top: -110px;
+    left: -150px;
+    height: 70px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+p {
+    margin: 5px;
+}
+
+p.week-header {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 0;
+}
+
+p.date {
+    font-size: 11px;
+    font-weight: 500;
+    margin-left: 0;
+}
+
+.weekly {
+    width: 125px;
+    height: auto;
+    padding-left: 5px;
+}
+
+.revenue {
+    width: 125px;
+    height: 40px;
+    padding-right: 5px;
+}
+
+p.rev-header {
+    font-size: 11px;
+    font-weight: 400;
+    margin-left: 63%;
+}
+
+p.income {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 61px;
+}
+
+.body {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: white;
+    position: absolute;
+    top: -40px;
+    left: -150px;
+    height: 180px;
+    width: 300px;
+}
+
+.data {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+}
+
+div.red {
+    border: solid 2px red;
+    border-radius: 50px;
+    background-color: red;
+    width: 15px;
+    height: 1px;
+}
+
+p.views {
+    color: black;
+    margin-right: 10px;
+}
+
+div.blue {
+    border: solid 2px blue;
+    border-radius: 50px;
+    background-color: blue;
+    width: 15px;
+    height: 1px;
+}
+
+p.purchases {
+    color: black;
+    margin-right: 10px;
+}
+
+div.graphic {
+    width: 92%;
+    height: 55%;
+    position: relative;
+    left: 4%;
+    display: column;
+}
+
+.line {
+    width: 100%;
+    border: solid 1px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    position: relative;
+}
+
+.l1 {
+    margin-top: 10px;
+}
+
+.l2 {
+    margin-top: 40px;
+}
+
+.l3 {
+    margin-top: 40px;
+}
+
+div.days {
+    width: 92%;
+    position: relative;
+    left: 4%;
+    top: -10px;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: space-between;
+}
+
+.day {
+    color: gray;
+    font-size: 11px;
+    margin: 0;
+}
+
+div#circles>div {
+    position: absolute;
+}
+
+.red-dot {
+    width: 1px;
+    height: 1px;
+    border: solid red 4px;
+    border-radius: 50px;
+    background-color: red;
+}
+
+div.r1 {
+    left: 18px;
+    bottom: 70px;
+}
+
+div.r2 {
+    left: 58px;
+    bottom: 118px;
+}
+
+div.r3 {
+    left: 108px;
+    bottom: 96px;
+}
+
+div.r4 {
+    left: 151px;
+    bottom: 111px;
+}
+
+div.r5 {
+    left: 193px;
+    bottom: 95px;
+}
+
+div.r6 {
+    left: 228px;
+    bottom: 73px;
+}
+
+div.r7 {
+    left: 269px;
+    bottom: 100px;
+}
+
+
+.blue-dot {
+    width: 1px;
+    height: 1px;
+    border: solid blue 4px;
+    border-radius: 50px;
+    background-color: blue;
+}
+
+div.b1 {
+    left: 18px;
+    bottom: 46px;
+}
+
+div.b2 {
+    left: 58px;
+    bottom: 70px;
+}
+
+div.b3 {
+    left: 108px;
+    bottom: 56px;
+}
+
+div.b4 {
+    left: 151px;
+    bottom: 70px;
+}
+
+div.b5 {
+    left: 193px;
+    bottom: 57px;
+}
+
+div.b6 {
+    left: 228px;
+    bottom: 46px;
+}
+
+div.b7 {
+    left: 269px;
+    bottom: 58px;
+}
+
+#lines>div {
+    position: absolute;
+}
+
+.stripe {
+    border: solid 2px red;
+    border-radius: 50px;
+    height: 0px;
+    background-color: red;
+}
+
+.sr1 {
+    width: 60px;
+    left: 9px;
+    bottom: 94px;
+    rotate: -51deg;
+}
+
+.sr2 {
+    width: 56px;
+    left: 59px;
+    bottom: 110px;
+    rotate: 24deg;
+}
+
+.sr3 {
+    width: 48px;
+    left: 109px;
+    bottom: 106px;
+    rotate: -20deg;
+}
+
+.sr4 {
+    width: 48px;
+    left: 150px;
+    bottom: 107px;
+    rotate: 20deg;
+}
+
+.sr5 {
+    width: 41px;
+    left: 194px;
+    bottom: 86px;
+    rotate: 32deg;
+}
+
+.sr6 {
+    width: 50px;
+    left: 226px;
+    bottom: 89px;
+    rotate: -34deg;
+}
+
+.stripe-b {
+    border: solid 2px blue;
+    border-radius: 50px;
+    height: 0px;
+    background-color: blue;
+}
+
+.sb1 {
+    width: 47px;
+    left: 15px;
+    bottom: 60px;
+    rotate: -32deg;
+}
+
+.sb2 {
+    width: 56px;
+    left: 59px;
+    bottom: 65px;
+    rotate: 16deg;
+}
+
+.sb3 {
+    width: 48px;
+    left: 109px;
+    bottom: 66px;
+    rotate: -20deg;
+}
+
+.sb4 {
+    width: 46px;
+    left: 151px;
+    bottom: 67px;
+    rotate: 17deg;
+}
+
+.sb5 {
+    width: 36px;
+    left: 198px;
+    bottom: 54px;
+    rotate: 17deg;
+}
+
+.sb6 {
+    width: 45px;
+    left: 228px;
+    bottom: 55px;
+    rotate: -16deg;
+}
