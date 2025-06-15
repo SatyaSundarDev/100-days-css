@@ -1,0 +1,258 @@
+:root {
+    --card: #FFCE4E;
+    --bg: #4A4841;
+}
+
+.frame {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 2px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: var(--bg);
+}
+
+.card {
+    position: absolute;
+    width: 320px;
+    height: 180px;
+    top: 110px;
+    left: 40px;
+    perspective: 800px;
+    /* 	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.7); */
+}
+
+.card:hover .flip {
+    transform: rotateX(180deg) translate3d(0, 0, 0);
+    box-shadow: 8px -10px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.flip {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    perspective: 1000px;
+    box-shadow: 8px 10px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.front,
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--card);
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.front {
+    z-index: 2;
+    transform: rotateX(0);
+}
+
+.front img {
+    position: relative;
+    top: 52px;
+    animation: bike 0.6s ease-in-out infinite;
+    transform-origin: 50% 100%;
+}
+
+.street {
+    position: absolute;
+    top: 127px;
+    left: 80px;
+    width: 160px;
+    height: 3px;
+    overflow: hidden;
+}
+
+.s {
+    position: absolute;
+    background: var(--bg);
+    height: 3px;
+    top: 0;
+    right: -25px;
+    border-radius: 3px;
+}
+
+.stripe-1 {
+    width: 4px;
+    animation: street 1s linear 0.8s infinite;
+}
+
+.stripe-2 {
+    width: 6px;
+    animation: street 0.9s linear 1s infinite;
+}
+
+.stripe-3 {
+    width: 8px;
+    animation: street 1s linear 0.1s infinite;
+}
+
+.stripe-4 {
+    width: 10px;
+    animation: street 0.9s linear 0.7s infinite;
+}
+
+.stripe-5 {
+    width: 12px;
+    animation: street 1s linear 0.5s infinite;
+}
+
+.stripe-6 {
+    width: 14px;
+    animation: street 0.9s linear 1s infinite;
+}
+
+.stripe-7 {
+    width: 16px;
+    animation: street 0.9s linear 0.5s infinite;
+}
+
+.stripe-8 {
+    width: 18px;
+    animation: street 1s linear 0.2s infinite;
+}
+
+.stripe-9 {
+    width: 20px;
+    animation: street 0.9s linear 0.5s infinite;
+}
+
+.back {
+    transform: rotateX(180deg);
+}
+
+.back img {
+    position: relative;
+    z-index: 1;
+    top: 57px;
+    animation: helicopter 1.5s ease-in-out infinite;
+    animation-fill-mode: both;
+}
+
+.sky {
+    position: absolute;
+    top: 0;
+    left: 80px;
+    bottom: 0;
+    width: 160px;
+    overflow: hidden;
+}
+
+.c {
+    position: absolute;
+    height: 3px;
+    right: -25px;
+    background: var(--bg);
+    border-radius: 3px;
+}
+
+.cloud-1 {
+    top: 34px;
+    width: 22.9px;
+    animation: cloud 0.8s linear 0.8s infinite;
+}
+
+.cloud-2 {
+    top: 48px;
+    width: 19.3px;
+    animation: cloud 0.8s linear 1s infinite;
+}
+
+.cloud-3 {
+    top: 62px;
+    width: 17.1px;
+    animation: cloud 0.8s linear 1s infinite;
+}
+
+.cloud-4 {
+    top: 76px;
+    width: 16.1px;
+    animation: cloud 0.7s linear 0.8s infinite;
+}
+
+.cloud-5 {
+    top: 90px;
+    width: 11.1px;
+    animation: cloud 0.8s linear 0.6s infinite;
+}
+
+.cloud-6 {
+    top: 104px;
+    width: 16.6px;
+    animation: cloud 0.7s linear 0.8s infinite;
+}
+
+.cloud-7 {
+    top: 118px;
+    width: 10.5px;
+    animation: cloud 0.8s linear 0.9s infinite;
+}
+
+.cloud-8 {
+    top: 132px;
+    width: 19.3px;
+    animation: cloud 0.8s linear 0.9s infinite;
+}
+
+.cloud-9 {
+    top: 146px;
+    width: 19.3px;
+    animation: cloud 0.7s linear 0.6s infinite;
+}
+
+@keyframes bike {
+
+    0%,
+    100% {
+        transform: scaleY(1);
+    }
+
+    50% {
+        transform: scaleY(1.03);
+    }
+}
+
+@keyframes street {
+    0% {
+        transform: translate3d(0, 0, 0) scaleX(1);
+    }
+
+    100% {
+        transform: translate3d(-210px, 0, 0) scaleX(0.8);
+    }
+}
+
+@keyframes helicopter {
+
+    0%,
+    100% {
+        transform: translate3d(0, -5px, 0);
+    }
+
+    50% {
+        transform: translate3d(0, 5px, 0);
+    }
+}
+
+@keyframes cloud {
+    0% {
+        transform: translate3d(0, 0, 0) scaleX(1);
+    }
+
+    100% {
+        transform: translate3d(-210px, 0, 0) scaleX(0.8);
+    }
+}
