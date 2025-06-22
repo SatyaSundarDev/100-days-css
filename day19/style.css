@@ -94,4 +94,4 @@ input[type="radio"] {
 
 #check-3:checked~.bg {
     transform: translateX(-800px);
-}
+}"/* Minor edit to fix GitHub commit view */" 
