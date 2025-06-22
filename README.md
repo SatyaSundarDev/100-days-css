@@ -44,6 +44,7 @@ Inside, you’ll find a self-contained HTML + CSS project.
 | 18  | Elastic Animation                                            | Snappy elastic effect with transitions                                     |
 | 19  | Pure CSS Slider                                              | Slider navigation using radio selectors and advanced combinators           |
 | 20  | Send Mail                                                    | Mail sent animation — a delightful success transition after submission     |
+| 21  | Pac-Man                                                      | Pac-Man animation using pure CSS keyframes and transforms                            |
 
 🛠️ More days coming soon... Stay tuned!
 
