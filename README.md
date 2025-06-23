@@ -15,7 +15,7 @@ No JavaScript. No frameworks. Just **HTML + CSS magic**! ✨
 ## 🗂️ Folder Structure
 
 Each day's work lives in its own folder:  
-✅ `day01` → `day21` … `day100`  
+✅ `day01` → `day22` … `day100`  
 Inside, you’ll find a self-contained HTML + CSS project.
 
 ---
