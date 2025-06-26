@@ -15,7 +15,7 @@ No JavaScript. No frameworks. Just **HTML + CSS magic**! ✨
 ## 🗂️ Folder Structure
 
 Each day's work lives in its own folder:  
-✅ `day01` → `day22` … `day100`  
+✅ `day01` → `day252` … `day100`  
 Inside, you’ll find a self-contained HTML + CSS project.
 
 ---
@@ -46,6 +46,7 @@ Inside, you’ll find a self-contained HTML + CSS project.
 | 20  | Send Mail                      | Mail sent animation — a delightful success transition after submission |
 | 21  | Pac-Man                        | Pac-Man animation using pure CSS keyframes and transforms              |
 | 22  | Fitness Tracker                | Fitness Tracker with animated prompt to encourage physical activity    |
+| 23  | Typography                     | Animated Typography for for enhanced header    |
 
 🛠️ More days coming soon... Stay tuned!
 
