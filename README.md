@@ -48,6 +48,7 @@ Inside, you’ll find a self-contained HTML + CSS project.
 | 22  | Fitness Tracker                | Fitness Tracker with animated prompt to encourage physical activity    |
 | 23  | Typography                     | Animated Typography for for enhanced header    |
 | 24  | Interactive Button             | Interactive Button with click feedback animation   |
+| 25  | Interactive Map                | Interactive Map marker with smooth transition  |
 🛠️ More days coming soon... Stay tuned!
 
 ---
