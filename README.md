@@ -15,7 +15,7 @@ No JavaScript. No frameworks. Just **HTML + CSS magic**! ✨
 ## 🗂️ Folder Structure
 
 Each day's work lives in its own folder:  
-✅ `day01` → `day252` … `day100`  
+✅ `day01` → `day26` … `day100`  
 Inside, you’ll find a self-contained HTML + CSS project.
 
 ---
@@ -49,6 +49,11 @@ Inside, you’ll find a self-contained HTML + CSS project.
 | 23  | Typography                     | Animated Typography for for enhanced header    |
 | 24  | Interactive Button             | Interactive Button with click feedback animation   |
 | 25  | Interactive Map                | Interactive Map marker with smooth transition  |
+| 26  | MOtivaitonal Modal             | Motivational Modal with three quotes and cheeky skip prompt | 
+
+
+
+
 🛠️ More days coming soon... Stay tuned!
 
 ---
